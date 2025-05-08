@@ -1,0 +1,10 @@
+@model List<string>;
+
+<h2>Chat History</h2>
+
+<ul>
+    @foreach (var row in Model)
+    {
+        <li>@row</li>
+    }
+</ul>

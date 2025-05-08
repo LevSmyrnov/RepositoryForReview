@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "Xv/jBx91FnR7ZLnayx7n7p++8vNXR4KtPx8ijoKKNgk=",
+  "Source": "RealtimeChatApplication",
+  "BasePath": "_content/RealtimeChatApplication",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RealtimeChatApplication\\wwwroot",
+      "Source": "RealtimeChatApplication",
+      "ContentRoot": "C:\\Users\\olena\\Lev\\RealtimeChatApplication\\wwwroot\\",
+      "BasePath": "_content/RealtimeChatApplication",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\olena\\Lev\\RealtimeChatApplication\\wwwroot\\css\\site.css",
+      "SourceId": "RealtimeChatApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\olena\\Lev\\RealtimeChatApplication\\wwwroot\\",
+      "BasePath": "_content/RealtimeChatApplication",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\olena\\Lev\\RealtimeChatApplication\\wwwroot\\index.html",
+      "SourceId": "RealtimeChatApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\olena\\Lev\\RealtimeChatApplication\\wwwroot\\",
+      "BasePath": "_content/RealtimeChatApplication",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

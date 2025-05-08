@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net8.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/b28d2fcd-558c-4e1a-bfcd-6c2180e6f2aa/resourceGroups/Internship_Test_Task/providers/Microsoft.Web/sites/RealtimeChatApplication"
+}

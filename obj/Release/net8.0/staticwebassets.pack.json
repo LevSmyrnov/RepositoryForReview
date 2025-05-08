@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\olena\\Lev\\RealtimeChatApplication\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\olena\\Lev\\RealtimeChatApplication\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.RealtimeChatApplication.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.RealtimeChatApplication.props",
+      "PackagePath": "build\\RealtimeChatApplication.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RealtimeChatApplication.props",
+      "PackagePath": "buildMultiTargeting\\RealtimeChatApplication.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.RealtimeChatApplication.props",
+      "PackagePath": "buildTransitive\\RealtimeChatApplication.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
