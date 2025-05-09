@@ -1,38 +1,23 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
 
 namespace RealtimeChatApplication.Controllers
 {
-    [Route("[controller]")]
     [ApiController]
+    [Route("history")]
     public class HistoryController : Controller
     {
-        private readonly string _sqlConnectionString;
+        private readonly IDatabaseService _databaseService;
 
-        public HistoryController()
+        public HistoryController(IDatabaseService databaseService)
         {
-            _sqlConnectionString = Environment.GetEnvironmentVariable("AZURE_SQL_CONNECTIONSTRING") ?? "<sql_connection_string>";
+            _databaseService = databaseService;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IList<string>>> ChatHistory()
+        [HttpGet("{rowsCount}")]
+        public ActionResult ChatHistory(int rowsCount)
         {
             var rows = new List<string>();
-
-            using var conn = new SqlConnection(_sqlConnectionString);
-            conn.Open();
-
-            var command = new SqlCommand("SELECT * FROM Messages", conn);
-            using SqlDataReader reader = await command.ExecuteReaderAsync();
-
-            if (reader.HasRows)
-            {
-                while (reader.Read())
-                {
-                    rows.Add($"{reader.GetInt32(0)}, {reader.GetString(1)}, {reader.GetDateTime(2)}, {reader.GetString(3)}, {reader.GetString(4)}");
-                }
-            }
-
+            _databaseService.GetChatHistoryRows(rowsCount, rows);
             return View(rows);
         }
     }

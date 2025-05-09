@@ -1,6 +1,12 @@
-@model List<string>;
+@model List<string>
 
 <h2>Chat History</h2>
+
+<div>@if (Model == null || Model?.Count == 0)
+    {
+        <p>The collection was null or empty</p>
+    }
+</div>
 
 <ul>
     @foreach (var row in Model)
